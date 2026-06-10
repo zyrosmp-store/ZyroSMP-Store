@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>ZyroSMP Store</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins',sans-serif;
+}
+
+body{
+    background:#090909;
+    color:white;
+}
+
+header{
+    min-height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    flex-direction:column;
+    text-align:center;
+    background:
+    linear-gradient(rgba(0,0,0,.75),rgba(0,0,0,.85)),
+    url("https://images.unsplash.com/photo-1511512578047-dfb367046420?auto=format&fit=crop&w=1600&q=80");
+    background-size:cover;
+    background-position:center;
+}
+
+header h1{
+    font-size:5rem;
+    color:#ff1e1e;
+    text-shadow:0 0 25px #ff0000;
+    font-weight:800;
+}
+
+header p{
+    margin-top:15px;
+    color:#d4d4d4;
+    font-size:1.2rem;
+}
+
+.btn{
+    margin-top:30px;
+    background:#ff0000;
+    color:white;
+    text-decoration:none;
+    padding:15px 35px;
+    border-radius:10px;
+    font-weight:700;
+    transition:.3s;
+}
+
+.btn:hover{
+    background:#cc0000;
+    transform:translateY(-3px);
+}
+
+.section{
+    max-width:1300px;
+    margin:auto;
+    padding:80px 20px;
+}
+
+.section-title{
+    text-align:center;
+    color:#ff1e1e;
+    font-size:2.8rem;
+    margin-bottom:40px;
+}
+
+.grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+    gap:25px;
+}
+
+.card{
+    background:#121212;
+    border:1px solid #2b2b2b;
+    border-radius:18px;
+    padding:30px;
+    text-align:center;
+    transition:.3s;
+}
+
+.card:hover{
+    border-color:#ff0000;
+    transform:translateY(-8px);
+    box-shadow:0 0 30px rgba(255,0,0,.35);
+}
+
+.card h3{
+    color:#ff2a2a;
+    font-size:1.8rem;
+}
+
+.price{
+    font-size:2rem;
+    font-weight:700;
+    margin:15px 0;
+}
+
+.buy-btn{
+    display:inline-block;
+    margin-top:15px;
+    text-decoration:none;
+    color:white;
+    background:#ff0000;
+    padding:12px 25px;
+    border-radius:10px;
+    font-weight:600;
+}
+
+.buy-btn:hover{
+    background:#cc0000;
+}
+
+footer{
+    text-align:center;
+    padding:30px;
+    background:#050505;
+    border-top:1px solid #222;
+}
+
+.online{
+    color:#ff4444;
+    font-weight:700;
+}
+</style>
+</head>
+<body>
+
+<header>
+    <h1>ZyroSMP Store</h1>
+    <p>The Official Store of ZyroSMP</p>
+    <a href="#ranks" class="btn">SHOP NOW</a>
+</header>
+
+<section class="section" id="ranks">
+    <h2 class="section-title">Ranks</h2>
+
+    <div class="grid">
+
+        <div class="card">
+            <h3>VIP</h3>
+            <div class="price">$4.99</div>
+            <p>Exclusive chat prefix, cosmetics and perks.</p>
+            <a href="#" class="buy-btn">BUY NOW</a>
+        </div>
+
+        <div class="card">
+            <h3>MVP</h3>
+            <div class="price">$9.99</div>
+            <p>More commands, better rewards and bonuses.</p>
+            <a href="#" class="buy-btn">BUY NOW</a>
+        </div>
+
+        <div class="card">
+            <h3>ZYRO</h3>
+            <div class="price">$19.99</div>
+            <p>The highest rank with premium benefits.</p>
+            <a href="#" class="buy-btn">BUY NOW</a>
+        </div>
+
+    </div>
+</section>
+
+<section class="section">
+    <h2 class="section-title">Crate Keys</h2>
+
+    <div class="grid">
+
+        <div class="card">
+            <h3>Common Key</h3>
+            <div class="price">$0.99</div>
+            <a href="#" class="buy-btn">BUY NOW</a>
+        </div>
+
+        <div class="card">
+            <h3>Gold Key</h3>
+            <div class="price">$1.99</div>
+            <a href="#" class="buy-btn">BUY NOW</a>
+        </div>
+
+        <div class="card">
+            <h3>Prime Key</h3>
+            <div class="price">$2.99</div>
+            <a href="#" class="buy-btn">BUY NOW</a>
+        </div>
+
+        <div class="card">
+            <h3>Crimson Key</h3>
+            <div class="price">$4.99</div>
+            <a href="#" class="buy-btn">BUY NOW</a>
+        </div>
+
+        <div class="card">
+            <h3>Amethyst Key</h3>
+            <div class="price">$7.99</div>
+            <a href="#" class="buy-btn">BUY NOW</a>
+        </div>
+
+    </div>
+</section>
+
+<footer>
+    <p>Server IP: <span class="online">play.zyrosmp.net</span></p>
+    <p>© 2026 ZyroSMP Store. All Rights Reserved.</p>
+</footer>
+
+</body>
+</html>
